@@ -11,4 +11,8 @@ Application	.\config\application.rb	/^  class Application < Rails::Application$/
 ApplicationController	.\app\controllers\application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
 ApplicationHelper	.\app\helpers\application_helper.rb	/^module ApplicationHelper$/;"	m
 SampleApp3	.\config\application.rb	/^module SampleApp3$/;"	m
+StaticPagesController	.\app\controllers\static_pages_controller.rb	/^class StaticPagesController < ApplicationController$/;"	c
+StaticPagesHelper	.\app\helpers\static_pages_helper.rb	/^module StaticPagesHelper$/;"	m
 about	.\public\index.html	/^      function about() {$/;"	f
+help	.\app\controllers\static_pages_controller.rb	/^  def help$/;"	f	class:StaticPagesController
+home	.\app\controllers\static_pages_controller.rb	/^  def home$/;"	f	class:StaticPagesController

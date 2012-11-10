@@ -24,3 +24,8 @@ end
 group :production do
   gem 'pg', '0.12.2'
 end
+
+# ExecJS::RuntimeError
+gem 'execjs'
+# gem 'libv8'
+# gem 'therubyracer'
