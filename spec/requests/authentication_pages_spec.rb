@@ -113,5 +113,15 @@ describe "Authentication" do
         specify { response.should redirect_to(root_path) }        
       end
     end
+
+    describe "for signed-in users" do
+      let(:user) { FactoryGirl.create(:user) }
+      before { sign_in user }
+
+      describe "submitting to the new action" do
+        before { put signup_path }
+        specify { response.should redirect_to(root_path) }
+      end
+    end
   end
 end
