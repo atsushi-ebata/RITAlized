@@ -14,7 +14,10 @@ AddRememberTokenToUsers	.\db\migrate\20121216061915_add_remember_token_to_users.
 Application	.\config\application.rb	/^  class Application < Rails::Application$/;"	c	class:SampleApp3
 ApplicationController	.\app\controllers\application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
 ApplicationHelper	.\app\helpers\application_helper.rb	/^module ApplicationHelper$/;"	m
+CreateMicroposts	.\db\migrate\20130104072713_create_microposts.rb	/^class CreateMicroposts < ActiveRecord::Migration$/;"	c
 CreateUsers	.\db\migrate\20121127134951_create_users.rb	/^class CreateUsers < ActiveRecord::Migration$/;"	c
+Micropost	.\app\models\micropost.rb	/^class Micropost < ActiveRecord::Base$/;"	c
+MicropostsController	.\app\controllers\microposts_controller.rb	/^class MicropostsController < ApplicationController$/;"	c
 SampleApp3	.\config\application.rb	/^module SampleApp3$/;"	m
 SessionsController	.\app\controllers\sessions_controller.rb	/^class SessionsController < ApplicationController$/;"	c
 SessionsHelper	.\app\helpers\sessions_helper.rb	/^module SessionsHelper$/;"	m
@@ -30,14 +33,17 @@ change	.\db\migrate\20121201091213_add_index_to_users_email.rb	/^  def change$/;
 change	.\db\migrate\20121201093555_add_password_digest_to_users.rb	/^  def change$/;"	f	class:AddPasswordDigestToUsers
 change	.\db\migrate\20121216061915_add_remember_token_to_users.rb	/^  def change$/;"	f	class:AddRememberTokenToUsers
 change	.\db\migrate\20121224062235_add_admin_to_users.rb	/^  def change$/;"	f	class:AddAdminToUsers
+change	.\db\migrate\20130104072713_create_microposts.rb	/^  def change$/;"	f	class:CreateMicroposts
 contact	.\app\controllers\static_pages_controller.rb	/^  def contact$/;"	f	class:StaticPagesController
 correct_user	.\app\controllers\users_controller.rb	/^    def correct_user$/;"	f	class:UsersController
+create	.\app\controllers\microposts_controller.rb	/^  def create$/;"	f	class:MicropostsController
 create	.\app\controllers\sessions_controller.rb	/^  def create$/;"	f	class:SessionsController
 create	.\app\controllers\users_controller.rb	/^  def create$/;"	f	class:UsersController
 create_remember_token	.\app\models\user.rb	/^    def create_remember_token$/;"	f	class:User
 current_user	.\app\helpers\sessions_helper.rb	/^  def current_user$/;"	f	class:SessionsHelper
 current_user=	.\app\helpers\sessions_helper.rb	/^  def current_user=(user)$/;"	f	class:SessionsHelper
 current_user?	.\app\helpers\sessions_helper.rb	/^  def current_user?(user)$/;"	f	class:SessionsHelper
+destroy	.\app\controllers\microposts_controller.rb	/^  def destroy$/;"	f	class:MicropostsController
 destroy	.\app\controllers\sessions_controller.rb	/^  def destroy$/;"	f	class:SessionsController
 destroy	.\app\controllers\users_controller.rb	/^  def destroy$/;"	f	class:UsersController
 edit	.\app\controllers\users_controller.rb	/^  def edit$/;"	f	class:UsersController
@@ -55,7 +61,7 @@ sign_in	.\app\helpers\sessions_helper.rb	/^  def sign_in(user)$/;"	f	class:Sessi
 sign_in	.\spec\support\utilities.rb	/^def sign_in(user)$/;"	f
 sign_out	.\app\helpers\sessions_helper.rb	/^  def sign_out$/;"	f	class:SessionsHelper
 signed_in?	.\app\helpers\sessions_helper.rb	/^  def signed_in?$/;"	f	class:SessionsHelper
-signed_in_user	.\app\controllers\users_controller.rb	/^    def signed_in_user$/;"	f	class:UsersController
+signed_in_user	.\app\helpers\sessions_helper.rb	/^  def signed_in_user$/;"	f	class:SessionsHelper
 store_location	.\app\helpers\sessions_helper.rb	/^  def store_location$/;"	f	class:SessionsHelper
 update	.\app\controllers\users_controller.rb	/^  def update$/;"	f	class:UsersController
 valid_signin	.\spec\support\utilities.rb	/^def valid_signin(user)$/;"	f
