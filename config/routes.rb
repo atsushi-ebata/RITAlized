@@ -1,4 +1,4 @@
-SampleApp3::Application.routes.draw do
+RITAlized::Application.routes.draw do
   resources :users do
     member do
       get :following, :followers
