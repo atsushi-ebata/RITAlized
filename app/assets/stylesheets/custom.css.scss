@@ -3,6 +3,7 @@
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
+$greenDarkOlive: #556b2f;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box; 
@@ -65,13 +66,20 @@ p {
 
 /* header */
 
+.navbar-inner {
+  background-color: $greenDarkOlive;  /* place your solid color here */
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+}
+
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
   color: white;
-  text-transform: uppercase;
-  letter-spacing: -1px;
+  text-transform: none;
+  letter-spacing: normal;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
@@ -80,6 +88,33 @@ p {
     text-decoration: none;
   }
 }
+
+.navbar .nav > li > a {
+  float: left;
+  margin-right: none;
+  font-size: 1.2em;
+  color: white;
+  text-transform: none;
+  letter-spacing: normal;
+  padding-top: 12px;
+  font-weight: lighter;
+  line-height: 1;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.navbar .nav .dropdown .dropdown-toggle .caret {
+  border-top-color: white !important;
+  border-bottom-color: white !important;
+}
+
+.navbar .nav .dropdown.open .dropdown-toggle .caret {
+  border-top-color: black !important;
+  border-bottom-color: black !important;
+}
+
 
 /* footer */
 
