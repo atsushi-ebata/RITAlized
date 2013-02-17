@@ -12,7 +12,7 @@ describe "Authentication" do
   end
 
   describe "signin" do
-    before { visit signin_path }
+    before { visit root_path }
 
     describe "with invalid information" do
       before { click_button "Sign in" }
@@ -30,7 +30,7 @@ describe "Authentication" do
       let(:user) { FactoryGirl.create(:user) }
       before { sign_in user }
 
-      it { should have_selector('title', text: user.name) }
+      it { should have_selector('title', text: 'Home') }
 
       it { should have_link('Users',    href: users_path) }
       it { should have_link('Profile',  href: user_path(user)) }
@@ -48,7 +48,7 @@ describe "Authentication" do
 
       describe "when attempting to visit a protected page" do
         before do
-          visit edit_user_path(user)
+          visit root_path
           fill_in "Email",    with: user.email
           fill_in "Password", with: user.password
           click_button "Sign in"
@@ -57,7 +57,7 @@ describe "Authentication" do
         describe "after signing in" do
 
           it "should render the desired protected page" do
-            page.should have_selector('title', text: 'Edit user')
+            page.should have_selector('title', text: 'Home')
           end
 
           describe "when signing in again" do
@@ -70,7 +70,7 @@ describe "Authentication" do
             end
 
             it "should render the default (profile) page" do
-              page.should have_selector('title', text: user.name) 
+              page.should have_selector('title', text: 'Home') 
             end
           end
         end
