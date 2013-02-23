@@ -1,4 +1,4 @@
-# Sample localization file for English. Add more files in this directory for other locales.
+# Localization file for English. Add more files in this directory for other locales.
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
@@ -6,3 +6,9 @@ en:
     attributes:
       user:
         password_digest: "Password" 
+  view:
+    home:
+      welcome: "Welcome to RITAlized"
+      uvp-mywish: "Under Construction"
+      uvp-othreswish: "Under Construction"
+      uvp-question: "Under Construction"

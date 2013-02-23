@@ -1,0 +1,14 @@
+﻿# Localization file for Japanese. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ja:
+  activerecord:
+    attributes:
+      user:
+        password_digest: "Password" 
+  view:
+    home:
+      welcome: "RITAlizedへようこそ！"
+      uvp-mywish: "あなたの願いは、誰かが叶えられます。"	  
+      uvp-otherswish: "誰かの願いは、あなたが叶えられます。"	  
+      uvp-question: "そんな誰かをRITAlizedで見つけよう。"
