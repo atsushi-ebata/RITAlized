@@ -12,3 +12,6 @@ en:
       uvp-mywish: "Under Construction"
       uvp-othreswish: "Under Construction"
       uvp-question: "Under Construction"
+    feed_item:
+      posted: "Posted "
+      ago: " ago."
