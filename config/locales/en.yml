@@ -9,9 +9,20 @@ en:
   view:
     home:
       welcome: "Welcome to RITAlized"
-      uvp-mywish: "Under Construction"
-      uvp-othreswish: "Under Construction"
-      uvp-question: "Under Construction"
+      uvp: "Under Construction"
     feed_item:
       posted: "Posted "
       ago: " ago."
+    session_new:
+      title: "Sign in"
+      submit: "Sign in"
+      newuser?: "New user?"
+      signupnow!: "Sign up now!"
+    user_new:
+      title: "Sign up"
+      submit: "Create my account"
+
+  helpers:
+    label:
+      user:
+        password_confirmation: "Confirm Password"

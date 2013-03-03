@@ -1,4 +1,3 @@
-<% provide(:title, "Sign in") %>
 <div class="row">
   <div class="span4">
     <%= form_for(:session, url: sessions_path) do |f| %>
@@ -9,9 +8,12 @@
       <%= f.label :password %>
       <%= f.password_field :password %>
 
-      <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
+      <%= f.submit t('view.session_new.submit'), class: "btn btn-large btn-primary" %>
     <% end %>
 
-    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+    <p>
+      <%= t('view.session_new.newuser?') %> 
+      <%= link_to t('view.session_new.signupnow!'), signup_path %>
+    </p>
   </div>
 </div>

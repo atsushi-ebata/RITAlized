@@ -9,12 +9,28 @@ ja:
   view:
     home:
       welcome: "RITAlizedへようこそ！"
-      uvp-mywish: "あなたの願いは、誰かが叶えられます。"	  
-      uvp-otherswish: "誰かの願いは、あなたが叶えられます。"	  
-      uvp-question: "そんな誰かをRITAlizedで見つけよう。"
+      uvp: "あなたの願いと誰かの願い、互いに叶えあえる人を見つけよう。"	  
     feed_item:
       posted: "書き込んでから、"
       ago: ""
+    session_new:
+      title: ログイン
+      submit: ログイン
+      newuser?: アカウント登録はまだですか？
+      signupnow!: いますぐ登録！
+    user_new:
+      title: アカウント登録（無料）
+      submit: アカウント登録
+  helpers:
+    label:
+      session:
+        email: メールアドレス
+        password: パスワード
+      user:
+        name: ユーザー名
+        email: メールアドレス
+        password: パスワード
+        password_confirmation: パスワードの再確認
 
   datetime:
     distance_in_words:
