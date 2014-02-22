@@ -7,9 +7,39 @@ ja:
       user:
         password_digest: "Password" 
   view:
+    navbar:
+      home: "ホーム"
+      help: "ヘルプ"
+      users: "ユーザー"
+      account: "アカウント"
+      profile: "プロフィール"
+      settings: "設定"
+      signout: "ログアウト"
     home:
+      title: "ホーム"
       welcome: "RITAlizedへようこそ！"
       uvp: "あなたの願いと誰かの願い、互いに叶えあえる人を見つけよう。"	  
+      feedtitle: "書き込み"
+    footer:
+      about: "RITAlizedについて"
+      contact: "連絡先"
+    help:
+      title: "ヘルプ"
+    about:
+      title: "RITAlizedについて"
+    contact:
+      title: "連絡先"
+    users_index:
+      title: "すべてのユーザー"
+    user_profile:
+      microposts: "書き込み"
+    user_edit:
+      title: "アカウント設定"
+      submit: "変更を保存"
+    user_follow:
+      submit: "フォローする"
+    user_unfollow:
+      submit: "フォローをやめる"
     feed_item:
       posted: "書き込んでから、"
       ago: ""
@@ -21,6 +51,21 @@ ja:
     user_new:
       title: アカウント登録（無料）
       submit: アカウント登録
+    user_info:
+      viewmyprofile: "自分のプロフィールを見る"
+    stats:
+      following: フォロー
+      followers: フォロワー
+    micropost_form:
+      compose: "ここに書き込む"
+      submit: "書き込む"
+    will_pagenate:
+      previous: "前のページ"
+      next: "次のページ"
+  controllers:
+    users_controller:
+      following: "フォロー"
+      followers: "フォロワー"
   helpers:
     label:
       session:

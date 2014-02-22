@@ -7,9 +7,39 @@ en:
       user:
         password_digest: "Password" 
   view:
+    nabvar:
+      home: "Home"
+      help: "Help"
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      signout: "Sign out"
     home:
+      title: "Home"
       welcome: "Welcome to RITAlized"
       uvp: "Under Construction"
+      feedtitle: "Micropost Feed"
+    footer:
+      about: "About"
+      contact: "Contact"
+    help:
+      title: "Help"
+    about:
+      title: "About Us"
+    contact:
+      title: "Contact"
+    users_index:
+      title: "All users"
+    user_profile:
+      microposts: "Microposts"
+    user_edit:
+      title: "Update your profile"
+      submit: "Save changes"
+    user_follow:
+      submit: "Follow"
+    user_unfollow:
+      submit: "Unfollow"
     feed_item:
       posted: "Posted "
       ago: " ago."
@@ -21,7 +51,21 @@ en:
     user_new:
       title: "Sign up"
       submit: "Create my account"
-
+    user_info:
+      viewmyprofile: "view my profile"
+    stats:
+      following: "following"
+      followers: "followers"
+    micropost_form:
+      compose: "Compose new micropost..."
+      submit: "Post"
+    will_pagenate:
+      previous: "Previous Label"
+      next: "Next Label"
+  controllers:
+    users_controller:
+      following: "Following"
+      followers: "Followers"
   helpers:
     label:
       user:

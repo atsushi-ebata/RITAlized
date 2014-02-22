@@ -5,8 +5,8 @@
   <%= current_user.name %>
 </h1>
 <span>
-  <%= link_to "view my profile", current_user %>
+  <%= link_to  t('view.user_info.viewmyprofile'), current_user %>
 </span>
 <span>
-  <%= pluralize(current_user.microposts.count, "micropost") %>
+  <%= t('view.user_profile.microposts') %> (<%= current_user.microposts.count %>)
 </span>
